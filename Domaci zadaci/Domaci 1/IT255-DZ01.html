@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+            }
+            header{
+                background-color: #666;
+                text-align: center;
+                font-size: 35px;
+                color: white;
+            }
+            nav{
+                background-color: cornflowerblue;
+                padding: 10px;
+                text-align: center;
+                font-size: 40px;
+                color: white;
+            }
+            a {
+                text-decoration: none;
+                padding-right: 50px;
+                color: white;
+            }
+            a:hover{
+                color: red;
+            }
+            #content{
+                display: flex;
+                flex-direction: row;
+                height: 100%;
+            }
+            section{
+                float: left;
+                background-color: cyan;
+                width: 80%;
+            }
+            article{
+                text-align: center;
+            }
+            #lorem{
+                text-align: left;
+                font-size: 19px;
+                margin-left: 5px;
+            }
+            aside{
+                
+            }
+            footer{
+                background-color: grey;
+                padding: 12px;
+                text-align: center;
+                font-size: 100px;
+                flex-grow: 1;
+            }
+        </style>
+
+    </head>
+    <body>
+        <header>
+            PRVI DOMACI ZADATAK IZ PREDMETA IT255
+        </header>
+        <nav>
+            <a href="https://imet.metropolitan.ac.rs">IMET</a>
+            <a href="http://lams.metropolitan.ac.rs:8080/lams">LAMS</a>
+        </nav>
+        <div id="content">
+        <section>
+            <h2 style="text-align: center;">OVO JE DEO ZA NEKU SEKCIJU</h2><br>
+            <article>
+                <form action="IT255-DZ01-name.html" method="POST">
+                    <label for="name">Ime: </label>
+                    <input type="text" id="name"/><br>
+                    <input type="radio" name="faks" value="FIT"> FIT<br>
+                    <input type="radio" name="faks" value="FAM"> FAM<br>
+                    <button type="submit" value="DALJE">DALJE</button>
+                </form><br>
+                <div id="lorem">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, eros fermentum eleifend iaculis, libero eros finibus augue, nec ullamcorper nibh augue ut lorem. Aliquam condimentum pretium odio, eu faucibus neque gravida id. Donec fringilla dictum turpis quis tristique. Ut eget lorem facilisis, sagittis leo quis, bibendum diam. Suspendisse sed odio nec enim imperdiet elementum. Donec et urna eu risus ullamcorper pellentesque quis quis metus. Proin tincidunt, elit vitae gravida luctus, nulla leo gravida nisl, eu iaculis nisl quam nec felis. Etiam in velit vitae arcu placerat fringilla sit amet molestie neque. Morbi dictum odio ac erat lacinia, eu mattis ligula rutrum.
+
+                    Donec at consequat arcu. Donec sit amet libero id magna pulvinar fringilla. Pellentesque egestas risus viverra neque vehicula, non ornare erat venenatis. Nulla porttitor nulla ac erat consectetur finibus. Duis commodo eu metus eu convallis. Maecenas tincidunt, dolor scelerisque euismod ultrices, sapien erat sagittis ante, ut malesuada tortor nisi et enim. Fusce in varius elit. In tincidunt id odio non interdum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras eu urna vitae ligula feugiat tempor. Etiam convallis, ex in rutrum imperdiet, orci turpis sagittis arcu, at luctus ante arcu id diam.
+
+                    Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus erat nibh, dictum blandit tincidunt eget, varius nec libero. Nam nec velit vehicula, laoreet libero tempus, finibus risus. Mauris sagittis euismod justo, in congue massa feugiat eu. Integer consequat orci ut magna pellentesque, ut consectetur ex tempor. Suspendisse consequat mollis erat, rutrum bibendum orci dictum ut. Aenean scelerisque ex quis condimentum viverra. Duis in lorem porta, porttitor orci in, accumsan ipsum. Nulla facilisi. Mauris quis aliquet nulla, in porttitor lacus. Sed aliquam arcu felis, ut tempor elit rhoncus vitae. Proin laoreet nisl ut vestibulum ultrices. Maecenas imperdiet malesuada venenatis. Fusce finibus egestas scelerisque. Nulla facilisi.
+
+                    Suspendisse congue elit ipsum, in malesuada leo ultricies et. Nunc rutrum ante a felis suscipit consectetur. Fusce vitae euismod lectus. Sed enim justo, tincidunt et varius vitae, sagittis non mauris. Sed feugiat facilisis ante, non sollicitudin tellus congue vitae. Duis id dui condimentum, cursus nisl quis, euismod tortor. Cras euismod urna eu tellus maximus, non interdum est bibendum. Donec aliquam luctus libero, nec posuere dolor laoreet a. Etiam in varius justo. Pellentesque neque erat, pulvinar ullamcorper varius eu, interdum nec tortor. Quisque sit amet eros molestie metus lacinia tempor vel quis tortor. Suspendisse pulvinar blandit commodo.
+
+                    Curabitur tempus aliquam facilisis. 
+                </div>
+            </article>
+        </section>
+        <aside>
+            <img src="met.jpg" alt="Logo Metropolitan" width="100%" height="100%">
+        </aside>
+        </div>
+        <footer>
+            KONTAKT INFORMAICJE
+        </footer>
+    </body>
+</html>

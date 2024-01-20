@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <label for="username">Username: </label>
+        <input type="text" id="username"/><br>
+        <label for="password">Password: </label>
+        <input type="text" id="password"/><br>
+        <button type="button" onclick="login()">Log in</button>
+
+        <p id="output"></p>
+
+
+
+        <script>
+
+            let admin = {
+                username: "admin",
+                password: "admin",
+
+                get username(){
+                    return this.username;
+                },
+
+                get password(){
+                    return this.passowrd;
+                },
+
+                set username(username){
+                    this.username = username;
+                },
+
+                set password(passowrd){
+                    this.password = password;
+                }
+            }
+
+            let user = {
+                _username: "user",
+                _password: "user",
+
+                get username(){
+                    return this._username;
+                },
+
+                get password(){
+                    return this._password;
+                },
+
+                set username(username){
+                    this._username = username;
+                },
+
+                set password(passowrd){
+                    this._password = password;
+                }
+            }
+
+            function login(){
+
+                var username = document.getElementById("username").value;
+                var password = document.getElementById("password").value;
+
+                const userPromise = new Promise((resolve, reject) => {
+                    if (username === user.username && password === user.password && password.length >= 6 && password.length <= 10){
+                        resolve();
+                    }else{
+                        reject(new Error("Nije dobar pass!"));
+                    }
+                });
+
+                userPromise.then(() => {
+                    window.location.href = "uspeh.html";
+                })
+                .catch((error) => {
+                    const output = document.getElementById("output");
+                    output.innerHTML = `Error: ${error.message}`;
+                })
+
+            }
+
+
+        </script>
+    </body>
+</html>

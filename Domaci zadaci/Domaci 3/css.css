@@ -1,0 +1,49 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    background-image: url("bg.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: red;
+}
+
+#nav{
+    text-align: center;
+}
+
+.btn.btn-primary{
+    background-color: red;
+    color: black;
+    border: 0;
+}
+
+.btn.btn-primary:hover{
+    background-color: rgb(255, 255, 0);
+    color: black;
+}
+
+#formSection{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid red;
+    width: 500px;
+    align-items: center;
+    border-radius: 10%;
+}
+
+.form-group{
+    text-align: center;
+}
+
+#submitButton{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

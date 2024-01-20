@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <label for="username">Username: </label>
+        <input type="text" id="username"/><br>
+        <label for="password">Password: </label>
+        <input type="text" id="password"/><br>
+        <button type="button" onclick="login()">Log in</button>
+
+        <p id="output"></p>
+
+        <script>
+
+            let mama = {
+                _username: "mama",
+                _password: "1234",
+
+                get username(){
+                    return this._username;
+                },
+
+                get password(){
+                    return this._password;
+                },
+
+                set username(username){
+                    this._username = username;
+                },
+
+                set password(passowrd){
+                    this._password = password;
+                }
+            }
+
+            let tata = {
+                _username: "tata",
+                _password: "9876",
+
+                get username(){
+                    return this._username;
+                },
+
+                get password(){
+                    return this._password;
+                },
+
+                set username(username){
+                    this._username = username;
+                },
+
+                set password(passowrd){
+                    this._password = password;
+                }
+            }
+
+
+            function login(){
+
+                var username = document.getElementById("username").value;
+                var password = document.getElementById("password").value;
+
+                if (username === mama.username && password === mama.password){
+                    window.location.href = "potvrda.html";
+                }else {
+                    const output = document.getElementById("output");
+                    output.innerHTML = "Nisu dobri kredencijali!";
+                }
+
+            }
+
+        </script>
+
+    </body>
+</html>

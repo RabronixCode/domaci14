@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <a href="login.html">LOGIN</a>
+
+
+
+        <script>
+            let user = {
+                name: "Marko",
+                age: 24,
+                "privatni faks": true
+            }
+            user.isAdmin = true;
+            delete user.age;
+            alert(user["privatni faks"]);
+
+            let key = prompt("Sta zelite da znate o korisniku?", "Napisi ovde!");
+            alert(user[key]);
+        </script>
+    </body>
+</html>
